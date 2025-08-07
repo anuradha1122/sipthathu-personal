@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Landing page routes
+Route::get('/', [LandingPageController::class, 'index'])->name('landing.index');
+Route::get('/about', [LandingPageController::class, 'about'])->name('landing.about');
+Route::get('/features', [LandingPageController::class, 'features'])->name('landing.features');
+Route::get('/contact', [LandingPageController::class, 'contact'])->name('landing.contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
