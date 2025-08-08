@@ -18,6 +18,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/myprofile', [ProfileController::class, 'myprofile'])->name('profile.myprofile');
+    Route::get('/myprofileedit', [ProfileController::class, 'myprofileedit'])->name('profile.myprofileedit');
+    Route::post('/myprofilestore', [ProfileController::class, 'myprofilestore'])->name('profile.myprofilestore');
+    Route::get('/myappointment', [ProfileController::class, 'myappointment'])->name('profile.myappointment');
 });
 
 require __DIR__.'/auth.php';

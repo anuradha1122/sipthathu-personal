@@ -40,7 +40,7 @@
                                     class="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 dark:bg-gray-700 p-1">
                                     <img src="{{ asset('images/profile.png') }}" alt="">
                                 </div>
-                                <div>{{ Auth::user()->name }}</div>
+                                <div>{{ Auth::user()->nameWithInitials }}</div>
 
                                 <div class="ms-1">
                                     <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg"
