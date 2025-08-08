@@ -1,4 +1,4 @@
-<div x-data="{ loading: true }" x-init="setTimeout(() => loading = false, 1500)">
+<div x-data="{ loading: true }" x-init="setTimeout(() => loading = false, 100)">
     <!-- Loading Screen -->
     <div x-show="loading" x-ref="loading" x-transition.opacity
         class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-blue-800 opacity-90">

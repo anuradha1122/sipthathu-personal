@@ -46,8 +46,8 @@
                 <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=75&fm=jpg&w=64" alt="User"
                     class="rounded-full w-10 h-10" />
                 <div>
-                    <div class="font-semibold text-gray-300">{{ Auth::user()->name }}</div>
-                    <div class="text-sm text-gray-300">Administrator</div>
+                    <div class="font-semibold text-gray-300">{{ Auth::user()->nameWithInitials }}</div>
+                    <div class="text-sm text-gray-300">{{ Auth::user()->nic }}</div>
                 </div>
             </div>
         </div>

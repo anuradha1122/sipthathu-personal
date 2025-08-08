@@ -8,23 +8,16 @@
 
     <!-- Navigation Menu -->
     <div class="mt-6 space-y-1">
-        <a href="#" class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
-            <i data-lucide="gauge" class="w-5 h-5"></i>
-            <span>Dashboard</span>
-        </a>
-
-        <a href="#" class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
-            <i data-lucide="users" class="w-5 h-5"></i>
-            <span>Users</span>
-        </a>
+        <x-sidebar-item name="My Profile" link="profile.myprofile" icon="users" />
+        <x-sidebar-item name="My Appointment" link="profile.myappointment" icon="gauge" />
 
         <a href="#"
             class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
             <i data-lucide="shopping-cart" class="w-5 h-5"></i>
-            <span>Products</span>
+            <span>Transfer</span>
         </a>
 
-        <a href="#" class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
+        <!-- <a href="#" class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
             <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
             <span>Analytics</span>
         </a>
@@ -32,10 +25,10 @@
         <a href="#" class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
             <i data-lucide="file-text" class="w-5 h-5"></i>
             <span>Orders</span>
-        </a>
+        </a> -->
 
         <!-- Settings with submenu using Alpine.js -->
-        <div x-data="{ open: false }">
+        <!-- <div x-data="{ open: false }">
             <button @click="open = !open"
                 class="w-full flex items-center justify-between px-4 py-2 hover:bg-gray-700 transition">
 
@@ -58,7 +51,7 @@
         <a href="#" class="flex items-center px-4 py-2 space-x-2 hover:bg-gray-700 transition">
             <i data-lucide="file-text" class="w-5 h-5"></i>
             <span>Orders</span>
-        </a>
+        </a> -->
 
     </div>
 </div>
